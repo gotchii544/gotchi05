@@ -3,13 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gochi | Artist & Painter</title>
+    <title>Gochi</title>
     
-    <!-- Bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome for Paint Roller Icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
     
     <style>
@@ -32,7 +29,6 @@
             color: var(--primary);
         }
 
-        /* Canvas / Painting Texture Background */
         .painting-bg {
             background-image: 
                 linear-gradient(rgba(139, 90, 43, 0.03) 1px, transparent 1px),
@@ -40,7 +36,6 @@
             background-size: 40px 40px;
         }
 
-        /* Enhanced Drip Effect */
         .hero {
             height: 100vh;
             background: linear-gradient(rgba(44, 33, 24, 0.65), rgba(44, 33, 24, 0.75)), 
@@ -86,23 +81,21 @@
             z-index: -1;
         }
 
-        /* Paint Roller Scroll Button */
         .scroll-btn {
             position: absolute;
             bottom: 40px;
             left: 50%;
             transform: translateX(-50%);
             color: white;
-            font-size: 2.2rem;
+            font-size: 2.5rem;
             cursor: pointer;
             animation: roller-bob 2s ease-in-out infinite;
             z-index: 10;
-            transition: all 0.3s;
         }
         
         .scroll-btn:hover {
             color: var(--accent);
-            transform: translateX(-50%) scale(1.15);
+            transform: translateX(-50%) scale(1.2);
         }
 
         @keyframes roller-bob {
@@ -140,7 +133,6 @@
             box-shadow: 0 25px 50px -12px rgba(139, 90, 43, 0.35) !important;
         }
 
-        /* Brush Stroke Hover Effect on Images */
         .art-img-wrapper {
             position: relative;
         }
@@ -149,10 +141,9 @@
             content: '';
             position: absolute;
             inset: 0;
-            background: linear-gradient(transparent, rgba(212, 160, 23, 0.15));
+            background: linear-gradient(transparent, rgba(212, 160, 23, 0.2));
             opacity: 0;
             transition: opacity 0.4s;
-            pointer-events: none;
         }
         
         .art-card:hover .art-img-wrapper::after {
@@ -179,11 +170,11 @@
         </div>
     </nav>
 
-    <!-- Hero with Paint Roller Scroll -->
+    <!-- Hero -->
     <section class="hero text-white text-center painting-bg">
         <div class="container position-relative" style="z-index: 2;">
             <h1 class="display-1 fw-bold paint-stroke">GOCHI</h1>
-            <p class="lead fs-3 mb-5">Contemporary Painter • Philippines</p>
+            <p class="lead fs-3 mb-5">Finishing Painter • Philippines</p>
             <a href="#portfolio" class="btn btn-lg px-5 py-3 rounded-pill" 
                style="background: var(--accent); color: white; font-weight: 600;">
                 View My Collection
@@ -203,12 +194,15 @@
             <div class="row align-items-center g-5">
                 <div class="col-lg-6">
                     <h2 class="section-title text-center text-lg-start mb-4">About Me</h2>
-                    <p class="lead">Hi, I'm Gochi — a passionate painter from the Philippines.</p>
-                    <p>My work explores memory, nature, and human emotion through rich textures and vibrant colors. I primarily work with acrylic and oil on canvas, creating bold, layered pieces inspired by Philippine landscapes and everyday life.</p>
+                    <p class="lead">Hi, I'm Gochi — Finishing Painter.</p>
+                    <p>Hi, I'm Jerico Duba.
+I’m a painter and finisher based in San Jose Del Monte, Bulacan.
+I specialize in painting works, finishing, and color mixing. I take pride in delivering clean and quality results for homes and buildings.
+Simple, hardworking, and always ready for the next project..</p>
                     <p><strong>Open for commissions & collaborations.</strong></p>
                 </div>
                 <div class="col-lg-6">
-                    <img src="https://picsum.photos/id/64/800/900" alt="Gochi" class="img-fluid rounded shadow">
+                    <img src="gotchime.jpg" alt="Gochi Portrait" class="img-fluid rounded shadow">
                 </div>
             </div>
         </div>
@@ -223,33 +217,33 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="card art-card h-100 shadow">
                         <div class="art-img-wrapper">
-                            <img src="https://picsum.photos/id/1015/800/600" class="card-img-top" alt="Sunset Reverie">
+                            <img src="ajoya.jpeg" class="card-img-top" alt="AJOYA PAMPANGA SHOPHOUSE">
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title">Sunset Reverie</h5>
-                            <p class="card-text text-muted">Acrylic on canvas • 120×90cm • 2025</p>
+                            <h5 class="card-title">AJOYA PAMPANGA SHOPHOUSE</h5>
+                            <p class="card-text text-muted">Exterior and Interior Painting</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <div class="card art-card h-100 shadow">
                         <div class="art-img-wrapper">
-                            <img src="https://picsum.photos/id/133/800/600" class="card-img-top" alt="Whispers of the Fields">
+                            <img src="rjj.jpeg" class="card-img-top" alt="Saint Joseph">
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title">Whispers of the Fields</h5>
-                            <p class="card-text text-muted">Oil on canvas • 100×80cm • 2024</p>
+                            <h5 class="card-title">Saint Joseph Richfield PHASE 2</h5>
+                            <p class="card-text text-muted">INTERIOR AND EXTERIOR PAINT</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <div class="card art-card h-100 shadow">
                         <div class="art-img-wrapper">
-                            <img src="https://picsum.photos/id/201/800/600" class="card-img-top" alt="Golden Hour">
+                            <img src="pag.jpeg" class="card-img-top" alt="pagsibol">
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title">Golden Hour</h5>
-                            <p class="card-text text-muted">Mixed Media • 90×120cm • 2025</p>
+                            <h5 class="card-title">PAGSIBOL VILLAGE</h5>
+                            <p class="card-text text-muted">INTERIOR AND EXTERIOR PAINT</p>
                         </div>
                     </div>
                 </div>
@@ -287,28 +281,24 @@
             </div>
             
             <div class="text-center mt-5">
-                <p>Email: <a href="mailto:your.email@example.com" class="text-decoration-none">your.email@example.com</a></p>
-                <p>Instagram: <a href="#" class="text-decoration-none">@gochi.art</a></p>
+                <p>Email: <a href="mailto:your.email@example.com" class="text-decoration-none">jericoduba@gmail.com</a></p>
+                <p>Instagram: <a href="#" class="text-decoration-none">@gochi.com</a></p>
             </div>
         </div>
     </section>
 
-    <footer class="text-white py-5 text-center">
+    <footer class="bg-dark text-white py-5 text-center">
         <p>&copy; 2026 Gochi • All Rights Reserved</p>
     </footer>
 
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     
     <script>
-        // Smooth scroll for all anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 if (this.getAttribute('href') !== '#') {
                     e.preventDefault();
-                    document.querySelector(this.getAttribute('href')).scrollIntoView({
-                        behavior: 'smooth'
-                    });
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
                 }
             });
         });
